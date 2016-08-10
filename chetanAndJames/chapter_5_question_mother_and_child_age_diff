@@ -1,0 +1,21 @@
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
+
+var byName = {};
+var mother;
+//console.log(ancestry);
+ancestry.forEach(function(person) {
+  var mother = person.mother;
+  var personAge = person.died - person.born;
+  var personName = person.name;
+  ancestry.filter(function(person){
+    if(person.name == mother) {
+      console.log(personName + "'s mother is  " + mother + 
+                  " and their age difference is " + 
+                  (personAge - (person.died - person.born)));
+    }
+});
+});
+// Your code here.
