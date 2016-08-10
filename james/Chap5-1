@@ -1,0 +1,12 @@
+var arrays = [[1, 2, 3], [4, 5], [6]];
+var tempArray = [];
+
+arrays.forEach(function(d){
+  d.forEach(function(innerElement){
+    tempArray.push(innerElement);
+  });
+});
+console.log(tempArray);
+
+// Your code here.
+// → [1, 2, 3, 4, 5, 6]
