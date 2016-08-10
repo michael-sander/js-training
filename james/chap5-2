@@ -1,0 +1,19 @@
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
+
+var diff = [];
+ancestry.forEach(function(person) {
+  var mom = person.mother;
+  var childAge = person.died -person.born;
+  
+  ancestry.forEach(function(person) {
+    if(person.name == mom) {
+		var momAge = person.died -person.born; 
+      	//console.log(childAge);
+      	diff.push(average([momAge, childAge]));
+    }
+  });
+});
+console.log(diff);
