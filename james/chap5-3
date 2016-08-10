@@ -1,0 +1,15 @@
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
+
+var hist = {};
+// Your code here.
+var count = 0;
+ancestry.forEach(function(person) {
+	var centry = Math.ceil(person.died / 100);
+  	//16 to 20 centries
+  	hist[centry] = count++;
+});
+
+console.log(hist);
